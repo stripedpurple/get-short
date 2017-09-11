@@ -1,0 +1,14 @@
+{% extends 'layout.twig' %}
+
+{% block body %}
+  <div class="main-container text-center">
+    <h1>Don't get short with me!</h1>
+    <div>
+      <form action="/shorten" id="shorten">
+        <input type="text" name="shortURL" placeholder="website...">
+        <input type="submit" value="get short" class="btn btn-default">
+      </form>
+    </div>
+    <div id="content"></div>
+  </div>
+{% endblock %}
