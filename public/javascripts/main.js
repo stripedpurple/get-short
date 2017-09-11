@@ -1,10 +1,11 @@
 (function(){
     $(document).ready(function(){
+        var hostname = window.location.hostname, port = window.location.port;
         $('#shorten').submit(function (e) {
             e.preventDefault();
     
             $.post('/shorten', $('#shorten').serialize(), function(data){
-                $('#content').html('<p class="text-center success">Url: localhost:1984/' + data + '</p>');
+                $('#content').html('<p class="text-center success">Url: ' + hostname + (port ? ":" + port : "") + '/' + data + '</p>');
             })
             .done(function (data) {
                 console.log("DONE!!!")

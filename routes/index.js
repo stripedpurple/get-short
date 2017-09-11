@@ -10,7 +10,7 @@ router.get('/', function(req, res, next) {
 router.get('/:id', function(req, res){
   db.get(req.params.id, function(err, data){
     if (err) {
-      res.status(404).send('error', err); 
+      res.status(404).send(err); 
     }else{
       res.redirect(data);
     }

@@ -1,3 +1,11 @@
+// Mixins
+=alert($color, $bg)
+  background: $bg
+  border: 2px solid $color
+  border-radius: 5px
+  color: $color
+
+// SASS Body
 body
   padding: 50px
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif
@@ -49,17 +57,11 @@ input
 .text-center
   text-align: center
 
+.success
+  +alert(#33b314, #dbffd1)
+
 .warn
-  background: #ffef95
-  border: 1px solid #ffe200
-  border-radius: 5px
+  +alert(#dea800, #ffef95)
 
 .danger
-  background: #ffd1d1
-  border: 1px solid #ff6565
-  border-radius: 5px
-
-.success
-  background: #dbffd1
-  border: 1px solid #33b314
-  border-radius: 5px
+  +alert(#ff6565, #ffd1d1)  
