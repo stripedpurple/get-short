@@ -43,22 +43,22 @@ input {
 .text-center {
   text-align: center; }
 
+.success {
+  background: #dbffd1;
+  border: 2px solid #33b314;
+  border-radius: 5px;
+  color: #33b314; }
+
 .warn {
   background: #ffef95;
-  border: 2px solid #ffe200;
+  border: 2px solid #dea800;
   border-radius: 5px;
-  color: #ffe200; }
+  color: #dea800; }
 
 .danger {
   background: #ffd1d1;
   border: 2px solid #ff6565;
   border-radius: 5px;
   color: #ff6565; }
-
-.success {
-  background: #dbffd1;
-  border: 2px solid #33b314;
-  border-radius: 5px;
-  color: #33b314; }
 
 /*# sourceMappingURL=style.css.map */

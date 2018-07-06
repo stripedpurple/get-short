@@ -7,8 +7,8 @@
             $.post('/shorten', $('#shorten').serialize(), function(data){
                 $('#content').html('<p class="text-center success">Url: ' + hostname + (port ? ":" + port : "") + '/' + data + '</p>');
             })
-            .done(function (data) {
-                console.log("DONE!!!")
+            .done(function () {
+                console.log("DONE!!!");
             })
             .fail(function(){
                 $('#content').html('<p class="text-center warn">Failed to shoten url.</p>');
